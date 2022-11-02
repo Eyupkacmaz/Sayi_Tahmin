@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,400;1,700&family=PT+Serif:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tahmin.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sayı Tahmin Oyunu</h1>
+        <div class="randomNumberWrapper">
+            <span class="randomNumberShow">?</span>
+        </div>
+        <p class="gameHint">
+            1 ile 100 arasından rastgele bir sayı seçtik . toplamda 10 deneme hakkınız var bakalım tahmin ettiğimiz sayıyı bulabilecek misiniz ?
+            Doğru tahmin yapana kadar size tahmininizin yüksek ya da düşük olduğuna dair ipucu vereceğiz .
+        </p>
+        <form class="form">
+                <label for="guessİnput">Bir Sayı Tahmin Ediniz</label>
+                    <div class="inputWrapper">
+                        <input type="text" id="guessİnput" class="guessİnput">
+                        <button type="button" class="submitGuess">GÖNDER</button>
+                    </div>
+        </form >
+            <div class="resultsElements">
+                <p class="guesses"></p>
+                <p class="lastResult"></p>
+                <p class="lowOrHi"></p>
+            </div>
+            <div class="buttonWrapper"></div>
+    </div>
+
+    <script src="tahmin.js"></script>
+</body>
+</html>
