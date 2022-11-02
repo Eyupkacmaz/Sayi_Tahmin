@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.container{
+    width: 800px;
+    margin: 50px auto;
+    max-width: 95%;
+}
+h1{
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+.randomNumberWrapper{
+    padding: 20px;
+    text-align: center;
+}
+.randomNumberShow{
+    color: #fff;
+    display: inline-block;
+    min-width: 100px;
+    background-color: #ec0964;
+    font-weight: 700;
+    font-size: 48px;
+}
+.gameHint{
+    font-size: 24px;
+    color: #333;
+    padding: 20px;
+    background-color: rgb(241, 238, 252);
+    border: 1px solid  rgb(178, 169, 206);
+    margin-top: 15px;
+}
+.inputWrapper{
+    display: flex;
+}
+.form{
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.inputWrapper *{
+    flex-grow: 1;
+    height: 60px;
+    padding: 15px;
+}
+.submitGuess{
+    flex-basis: 80px;
+    background-color: #ec0964;
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform:uppercase ;
+    flex-shrink: 2;
+    cursor: pointer;
+}
+.submitGuess:focus{
+   outline: 2px solid #e65790;
+}
+.guessİnput{
+    flex-basis: 400px;
+}
+.lastResult{
+    color: #fff;
+    padding: 5px;
+}
+.resetButton{
+    background-color: #ec0964;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    margin: 20px auto;
+    font-weight: 700;
+    text-align: center;
+}
